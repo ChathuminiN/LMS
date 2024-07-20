@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Label fx:id="lblTitle" layoutX="216.0" layoutY="94.0" prefHeight="46.0" prefWidth="166.0" text="Contact us" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTpNo" layoutX="207.0" layoutY="153.0" text="Telephone Number: 0385536921" />
+      <Label fx:id="lblFax" layoutX="241.0" layoutY="180.0" text="Fax : 0385536921" />
+      <Label fx:id="lblEmail" layoutX="219.0" layoutY="214.0" text="Email:cityLibrary@gmail.com" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <Label fx:id="lblTitle" contentDisplay="CENTER" layoutX="264.0" layoutY="8.0" prefHeight="32.0" prefWidth="130.0" text="BooKs" textAlignment="CENTER" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="85.0" layoutY="101.0" prefHeight="27.0" prefWidth="738.0" promptText="Title" />
+      <TextField fx:id="txtId" layoutX="85.0" layoutY="67.0" promptText="Book ID" />
+      <TextField fx:id="txtSalary" layoutX="339.0" layoutY="67.0" prefHeight="27.0" prefWidth="82.0" promptText="CategoryID" />
+      <TextField fx:id="txtAddress" layoutX="85.0" layoutY="138.0" prefHeight="27.0" prefWidth="738.0" promptText="Author" />
+      <TableView fx:id="tblCustomer" layoutX="12.0" layoutY="213.0" prefHeight="307.0" prefWidth="828.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="BookID" />
+          <TableColumn fx:id="colName" prefWidth="153.5999755859375" text="Cat.ID" />
+            <TableColumn fx:id="colAddress" prefWidth="129.60003662109375" text="ISBN" />
+            <TableColumn fx:id="colSalary" minWidth="0.0" prefWidth="114.4000244140625" text="Title" />
+            <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="114.4000244140625" text="Author" />
+            <TableColumn fx:id="colAction1" minWidth="0.0" prefWidth="114.4000244140625" text="Year" />
+            <TableColumn fx:id="colAction11" minWidth="0.0" prefWidth="114.4000244140625" text="Remove/Update" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSalary1" layoutX="519.0" layoutY="67.0" prefHeight="27.0" prefWidth="82.0" promptText="ISBN" />
+      <TextField fx:id="txtName1" layoutX="85.0" layoutY="176.0" prefHeight="27.0" prefWidth="257.0" promptText="Year" />
+      <Label layoutX="21.0" layoutY="71.0" prefHeight="19.0" prefWidth="58.0" text="Book ID" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="105.0" prefHeight="19.0" prefWidth="58.0" text="Title" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="142.0" prefHeight="19.0" prefWidth="58.0" text="Author" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="180.0" prefHeight="19.0" prefWidth="58.0" text="Year" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="71.0" prefHeight="19.0" prefWidth="58.0" text="Cat.ID" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="445.0" layoutY="71.0" prefHeight="19.0" prefWidth="58.0" text="ISBN" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSalary11" layoutX="740.0" layoutY="67.0" prefHeight="27.0" prefWidth="82.0" promptText="No.of Copies" />
+      <Label layoutX="632.0" layoutY="71.0" prefHeight="20.0" prefWidth="108.0" text="No.of Copies" textFill="#1b9160">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

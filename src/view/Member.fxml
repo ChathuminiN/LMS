@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <Label fx:id="lblTitle" contentDisplay="CENTER" layoutX="235.0" layoutY="14.0" prefHeight="32.0" prefWidth="130.0" text="Customer" textAlignment="CENTER" textFill="#2a15b4">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="36.0" layoutY="101.0" prefHeight="27.0" prefWidth="257.0" promptText="Customer Name" />
+      <TextField fx:id="txtId" layoutX="36.0" layoutY="67.0" promptText="Customer ID" />
+      <TextField fx:id="txtSalary" layoutX="36.0" layoutY="172.0" promptText="Salary" />
+      <TextField fx:id="txtAddress" layoutX="36.0" layoutY="138.0" prefHeight="27.0" prefWidth="387.0" promptText="Address" />
+      <JFXButton fx:id="btnSave" layoutX="482.0" layoutY="128.0" onAction="#btnSaveCustomerOnAction" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: rgb(162, 155, 254); -fx-background-radius: 15;" text="save" textFill="#311ce5">
+         <font>
+            <Font name="AdobeArabic-Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCustomer" layoutX="8.0" layoutY="218.0" prefHeight="248.0" prefWidth="586.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="153.5999755859375" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="129.60003662109375" text="Address" />
+            <TableColumn fx:id="colSalary" minWidth="0.0" prefWidth="114.4000244140625" text="Salary" />
+            <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="114.4000244140625" text="Action" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnLoadTable" layoutX="408.0" layoutY="472.0" onAction="#btnLoadTableOnAction" prefHeight="48.0" prefWidth="182.0" style="-fx-background-color: pink; -fx-background-radius: 15;" text="Load Table" textFill="#e3361e">
+         <font>
+            <Font name="AdobeArabic-Bold" size="26.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
